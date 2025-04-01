@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import UpcomingMatch from "./UpcomingMatch ";
-import ImageCarousel from "./ImageCarousel";
+import ImageCarousel from "../ImageCarousel/ImageCarousel";
+import UpcomingMatch from "./UpcomingMatch/UpcomingMatch ";
 
 const Dashboard = () => {
   const [match, setMatch] = useState(null);

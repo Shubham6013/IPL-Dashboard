@@ -1,4 +1,4 @@
-import MatchSchedule from "@/app/components/MatchSchedule";
+import MatchSchedule from "@/app/components/MatchSchedule/MatchSchedule";
 
 const MatchSchedulePage = () => {
   return (

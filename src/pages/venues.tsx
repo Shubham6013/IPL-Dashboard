@@ -1,5 +1,4 @@
-import Venues from "@/app/components/Venues";
-
+import Venues from "@/app/components/Venues/Venues";
 
 const VenuesTablePage = () => {
   return (

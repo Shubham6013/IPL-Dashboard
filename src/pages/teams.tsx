@@ -1,5 +1,4 @@
-import Teams from "@/app/components/Teams";
-
+import Teams from "@/app/components/Teams/Teams";
 
 const TeamsTablePage = () => {
   return (

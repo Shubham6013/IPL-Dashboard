@@ -1,4 +1,4 @@
-import PointsTable from "@/app/components/PointsTable";
+import PointsTable from "@/app/components/PointsTable/PointsTable";
 
 
 const PointsTablePage = () => {
