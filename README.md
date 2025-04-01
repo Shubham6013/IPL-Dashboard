@@ -5,16 +5,16 @@
 IPL Dashboard is a web application built with Next.js that scrapes live IPL data from [iplt20.com](https://www.iplt20.com) and presents it in a user-friendly format. It features an interactive points table, match schedule, team details, venues, and visualizations using charts.
 
 ![IPL Dashboard Screenshot](./public/dashboard.png)
-![IPL Dashboard-Mobile-View Screenshot](./public/dashboard1.png)
-![IPL Dashboard-Mobile-View Screenshot](./public/dashboard2.png)
 ![IPL PointsTable Screenshot](./public/points-table.png)
 ![IPL Venues Screenshot](./public/venues.png)
-![IPL Venues-Mobile-View Screenshot](./public/venue-mobile.png)
 ![IPL Teams Screenshot](./public/teams.png)
-![IPL Teams-Mobile-View Screenshot](./public/teams-mobile.png)
 ![IPL Schedule Screenshot](./public/schedule.png)
 ![IPL Schedule-Mobile-View Screenshot](./public/schedule-mobile.png)
 ![IPL Teams Standings Screenshot](./public/teams-comparison.png)
+![IPL Dashboard-Mobile-View Screenshot](./public/dashboard1.png)
+![IPL Dashboard-Mobile-View Screenshot](./public/dashboard2.png)
+![IPL Venues-Mobile-View Screenshot](./public/venue-mobile.png)
+![IPL Teams-Mobile-View Screenshot](./public/teams-mobile.png)
 
 
 ## Features
