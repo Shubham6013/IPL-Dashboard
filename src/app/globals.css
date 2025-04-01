@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -23,4 +27,79 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --ipl-gold: #f2c94c;
+  --ipl-blue: #004c8c;
+  --ipl-red: #e32726;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.ipl-section {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.ipl-section:hover {
+  border-color: var(--ipl-gold);
+  box-shadow: 0 10px 25px rgba(242, 201, 76, 0.3);
+}
+
+.bg-fallback {
+  background-color: var(--ipl-blue);
+}
+
+@media (max-width: 640px) {
+  .grid {
+    gap: 12px;
+  }
+}
+
+.dashboard-widget {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.match-header, .match-teams, .match-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.match-header h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.match-teams .team {
+  display: flex;
+  align-items: center;
+}
+
+.match-teams img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.match-footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.match-footer a:hover {
+  color: #0056b3;
 }

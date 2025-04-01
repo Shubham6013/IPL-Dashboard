@@ -1,0 +1,175 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    min-height: 100vh;
+    animation: bg-move 15s infinite alternate;
+  }
+  
+  @keyframes bg-move {
+    0% {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+    50% {
+      background: linear-gradient(135deg, #002855, #004e92);
+    }
+    100% {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffdd00;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  
+  .table-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .points-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+  }
+  
+  .points-table thead {
+    background: linear-gradient(135deg, #ff4500, #ff6347);
+    color: #fff;
+  }
+  
+  .points-table th {
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .points-table tbody tr {
+    transition: all 0.3s;
+  }
+  
+  .points-table tbody tr:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  .points-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s;
+  }
+  
+  .points-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .wins {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .losses {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .points {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .form-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: #121313;
+    font-weight: bold;
+    transition: transform 0.3s;
+  }
+  
+  .form-badge:hover {
+    transform: scale(1.1);
+  }
+  
+  .ball {
+    position: absolute;
+    background: url('/cricket-ball.png') no-repeat center/contain;
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+    animation: float 8s linear infinite;
+    z-index: 0;
+  }
+  
+  .ball:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-duration: 12s;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .ball:nth-child(2) {
+    top: 40%;
+    left: 85%;
+    animation-duration: 15s;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .ball:nth-child(3) {
+    top: 75%;
+    left: 15%;
+    animation-duration: 10s;
+    width: 40px;
+    height: 40px;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-30px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .points-table th, .points-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .ball {
+      display: none;
+    }
+  }
+  
